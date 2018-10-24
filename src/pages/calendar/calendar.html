@@ -1,0 +1,20 @@
+<h1 class="month" *ngIf="selectedMonth">{{selectedMonth}}</h1>
+<div class="calendar" *ngIf="calendar.length > 0">
+  <div class="week-header">
+    <div class="day" *ngFor="let weekDay of weekDays">{{weekDay}}</div>
+  </div>
+  <div class="week-body">
+    <div class="week" *ngFor="let week of calendar">
+      <div class="day" *ngFor="let day of week" [ngClass]="{'empty':day.length === 0}">{{day}}</div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="footprints">
+    <img src="assets/imgs/dog_footprint.png"/>
+    <img src="assets/imgs/dog_footprint.png"/>
+    <img src="assets/imgs/dog_footprint.png"/>
+    <img src="assets/imgs/dog_footprint.png"/>
+  </div>
+  <div class="text">¿Comieron hoy los perrinos?</div>
+</div>

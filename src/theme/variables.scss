@@ -22,7 +22,12 @@ $app-direction: ltr;
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/theming/overriding-ionic-variables/
 
+@font-face {
+  font-family: 'sakra';
+  src: url('../assets/fonts/sakra_regular.ttf');
+}
 
+$font-family-wp-base: "sakra";
 
 
 // Named Color Variables

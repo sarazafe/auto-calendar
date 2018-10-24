@@ -1,0 +1,52 @@
+page-calendar {
+  font-family: "sakra";
+  .month {
+    font-size: 5.5em;
+    text-align: center;
+    line-height: 2em;
+    margin-top: 0.8em;
+  }
+  .footer {
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5em;
+    margin-right: 1.2em;
+    .footprints{
+      img{
+        width: 7em;
+      }
+    }
+    .text {
+      font-size: 4em;
+      line-height: 3em;
+      flex: 1 0 auto;
+    }
+  }
+
+  .calendar {
+    display: flex;
+    flex-direction: column;
+
+    .day{
+      flex: 1 0 2em;
+      text-align: center;
+      font-size: 3em;
+    }
+
+    .week-header {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .week-body {
+      display: flex;
+      flex-direction: column;
+      flex: 1 0 auto;
+      .week {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+  }
+}
